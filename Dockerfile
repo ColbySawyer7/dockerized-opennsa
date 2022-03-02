@@ -51,4 +51,4 @@ ENV PYTHONPATH .
 EXPOSE 9080
 EXPOSE 9443
 
-ENTRYPOINT twistd --pidfile= -y /home/opennsa/opennsa3/opennsa-docker3.tac
+ENTRYPOINT rm -f twistd.pid; twistd  -ny /home/opennsa/opennsa3/opennsa-docker3.tac
